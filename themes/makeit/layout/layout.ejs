@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Use <%= page.title %> for dynamic title -->
+	<title><%= config.title %></title>
+
+	<!-- Twitter bootstrap (via cdn) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <%- css('styles.css') %>
+  <!-- <link rel="stylesheet" href="/styles.css" type="text/css">
+  <link rel="stylesheet" href="./styles.css" > -->
+
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Hexo Blog</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tags <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Tag 1</a></li>
+            <li><a href="#">Tag 2</a></li>
+            <li><a href="#">Tag 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+	<div class='container'>
+		<%- body %>
+	</div>
+</body>
+</html>
