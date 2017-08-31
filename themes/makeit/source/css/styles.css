@@ -5,3 +5,41 @@
     color: #fff;
     text-shadow: 0 1px 1px rgba(0,0,0,.3);
 }
+
+footer {
+      background-color: #42a5f5;
+      color: white;
+      padding: 15px;
+      font-size: 130%;
+      text-align: center;
+}
+
+.sidenav {
+          padding: 15px;
+          background-color: #f1f1f1;
+          height: 100%;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color:  #42a5f5;
+    color: white;
+
+}
+
+.panel > .panel-heading a {
+  font-weight: bold;
+  font-size: 115%;
+  color: white;
+}
+
+.text-datem {
+  color: white;
+}
+
+.well-lg {
+  background-image: none;
+  color: white;
+  background-color:  #42a5f5;
+
+}
