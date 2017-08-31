@@ -6,7 +6,7 @@
 </div>
 
 <div class='row'>
-  <div class="col-md-8">
+  <div class="col-md-8 col-sm-12 col-xs-12">
     <h4><small>Posts Recientes</small></h4>
     <hr>
   	<% page.posts.each(function(post){ %>
@@ -21,10 +21,7 @@
           </div>
 
 
-<!-- tag iteration -->
-
           <div class="panel-body">
-
           <% if(post.excerpt) { %>
             <p>
               <%- post.excerpt %>
@@ -36,57 +33,8 @@
   </div>
 
 <!-- side widgets start -->
-  <div class="col-md-4 sidenav">
-    <!-- Search Widget -->
-    <div class="panel panel-default">
-      <div class="panel-heading">Buscar</div>
-      <div class="panel-body">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for...">
-            <span class="input-group-btn">
-              <button class="btn btn-secondary" type="button">Go!</button>
-            </span>
-          </div>
-        </div>
-      </div><!-- search widget end -->
+  <div class="col-md-4 hidden-xs hidden-sm">
+    <%- partial('_partial/side-widgets') %>
 
-      <!-- Tags Widget -->
-      <div class="panel panel-default">
-        <div class="panel-heading">Tags</div>
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-md-6">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <a href="#">Web Design</a>
-                </li>
-                <li class="list-group-item">
-                  <a href="#">HTML</a>
-                </li>
-                <li class="list-group-item">
-                  <a href="#">Freebies</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <a href="#">JavaScript</a>
-                </li>
-                <li class="list-group-item">
-                  <a href="#">CSS</a>
-                </li>
-                <li class="list-group-item">
-                  <a href="#">Tutorials</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>  <!-- tags widget end -->
   </div>    <!-- side menu column end -->
-
-
-
-
 </div><!-- main row end -->
