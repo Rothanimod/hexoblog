@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Use post title for dynamic title -->
+	<title>Hexo Blog test</title>
+
+	<!-- Twitter bootstrap (via cdn) -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Hexo Blog</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+      </div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tags <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Freebies</a></li>
+						<li><a href="#">JavaScript</a></li>
+						<li><a href="#">CSS</a></li>
+						<li><a href="#">Tutorials</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+      </ul>
+		</div>
+    </div>
+  </nav>
+
+	<div class='container'>
+		
+<div class='row'>
+	<!-- page content column -->
+	<div class="col-md-8 col-sm-12 col-xs-12">
+		<div class="well well-lg">
+			<h1>post title</h1>
+		</div>
+
+		<div class='text-muted'>
+	        2017-08-30
+	    </div>
+		<p>This part is the excerpt, get it with the &lt;%- post.excerpt %&gt;<br><a id="more"></a><br>This is the rest of the post. You can get it with &lt;%- post.more %&gt;</p>
+
+	</div>
+<!-- side widgets partial -->
+	<div class="col-md-4 hidden-xs hidden-sm">
+		<!-- Search Widget -->
+<div class="panel panel-default">
+  <div class="panel-heading">Buscar</div>
+  <div class="panel-body">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button">Go!</button>
+        </span>
+      </div>
+    </div>
+  </div><!-- search widget end -->
+
+  <!-- Tags Widget -->
+  <div class="panel panel-default">
+    <div class="panel-heading">Tags</div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="#">Web Design</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">HTML</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">Freebies</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="#">JavaScript</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">CSS</a>
+            </li>
+            <li class="list-group-item">
+              <a href="#">Tutorials</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>  <!-- tags widget end -->
+
+	</div>
+
+</div>
+
+
+		<!-- footer start -->
+		<footer class="container">
+		  <p>Hexoblog Makeit template made by Mauricio Norena</p>
+			<p>2017</p>
+		</footer>
+	</div>
+
+
+</body>
+</html>
