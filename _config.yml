@@ -78,3 +78,5 @@ theme: makeit
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
+  repo: git@github.com:rothanimod/rothanimod.github.io/hexoblog.git
+  branch: master
